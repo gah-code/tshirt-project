@@ -1,1 +1,100 @@
-.card{box-shadow:.25rem .25rem 1rem rgba(0,0,0,.15)}*,:after,:before{box-sizing:border-box}*{font:inherit;margin:0;padding:0}img{display:block;max-width:100%}body{color:#0c2346;font-family:Roboto,sans-serif;font-size:1.125rem;margin:3rem 0}.container{margin-inline:auto;width:min(58rem,100% - 2rem)}.even-columns{display:grid;gap:var(--gap,1rem);grid-auto-columns:1fr;grid-auto-flow:column}.margin-block-xl{margin-block:3rem}.fw-bold{font-weight:700}.fw-black{font-weight:900}.text-center{text-align:center}.text-accent{color:#ff5c64}.page-title{font-size:3rem;font-weight:900}.visually-hidden{clip:rect(0 0 0 0);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}.card{background-color:#fff;border-radius:2rem;overflow:hidden}
+.card {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  color: hsl(216, 71%, 16%);
+  margin: 3rem 0;
+}
+
+.container {
+  width: min(58rem, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: var(--gap, 1rem);
+}
+
+.margin-block-xl {
+  margin-block: 3rem;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-accent {
+  color: hsl(357, 100%, 68%);
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.card {
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+}
+.card[data-type=product] h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.card[data-type=product] .card__content {
+  padding: 2rem 1rem 1rem;
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.card[data-type=product] .button {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=style.css.map */
