@@ -96,5 +96,9 @@ body {
   right: 1rem;
   transform: translateY(-50%);
 }
+.card[data-type=link-with-image] {
+  text-decoration: none;
+  color: hsl(357, 74%, 40%);
+}
 
 /*# sourceMappingURL=style.css.map */
