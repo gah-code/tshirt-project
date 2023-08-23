@@ -1,4 +1,4 @@
-.card {
+.button, .card {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -84,6 +84,7 @@ body {
   text-transform: uppercase;
 }
 .card[data-type=product] .card__content {
+  position: relative;
   padding: 2rem 1rem 1rem;
   display: flex;
   align-items: end;
@@ -99,6 +100,40 @@ body {
 .card[data-type=link-with-image] {
   text-decoration: none;
   color: hsl(357, 74%, 40%);
+  transform: scale(1);
+  transition: scale 350ms ease;
+}
+.card[data-type=link-with-image]:hover, .card[data-type=link-with-image]:focus {
+  transform: scale(1.05);
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 71%, 16%);
+}
+.card[data-type=link-with-image] .card__content {
+  padding: 1rem 0.75rem;
+}
+.card[data-type=link-with-image] img {
+  height: 8.75rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.button {
+  display: inline-block;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1rem;
+  background: hsl(357, 100%, 68%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 100vw;
+  transform: scale(1);
+  transition: scale 350ms ease;
+}
+.button:hover, .button:focus {
+  transform: scale(1.05);
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(357, 74%, 40%);
 }
 
 /*# sourceMappingURL=style.css.map */
